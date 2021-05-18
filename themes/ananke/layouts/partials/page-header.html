@@ -19,8 +19,7 @@
 </header>
 {{ else }}
 <header>
-    <div bg-black class="{{ .Site.Params.background_color_class | default "
-    " }}">
+    <div bg-black class="{{ .Site.Params.background_color_class | default}}">
     {{ partial "site-navigation.html" . }}
     </div>
 </header>

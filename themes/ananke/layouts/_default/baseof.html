@@ -19,8 +19,7 @@
 
     {{ $stylesheet := .Site.Data.webpack_assets.app }}
     {{ with $stylesheet.css }}
-    <link %s%s href="{{ relURL (printf "
-    " "dist/" .) }}" rel="stylesheet">
+    <link %s%s href="{{ relURL (printf"dist/" .) }}" rel="stylesheet">
     {{ end }}
 
     {{ range .Site.Params.custom_css }}
